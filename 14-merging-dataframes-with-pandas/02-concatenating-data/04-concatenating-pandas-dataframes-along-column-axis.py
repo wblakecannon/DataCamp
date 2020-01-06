@@ -9,12 +9,17 @@ The files 'quarterly_max_temp.csv' and 'monthly_mean_temp.csv' have been pre-loa
 
 INSTRUCTIONS
 100XP
-Create a new DataFrame called weather by concatenating the DataFrames weather_max and weather_mean horizontally.
-Pass the DataFrames to pd.concat() as a list and specify the keyword argument axis=1 to stack them horizontally.
+Create weather_list, a list of the DataFrames weather_max and weather_mean.
+Create a new DataFrame called weather by concatenating weather_list horizontally.
+Pass the list to pd.concat() and specify the keyword argument axis=1 to stack them horizontally.
 Print the new DataFrame weather.
+
 '''
-# Concatenate weather_max and weather_mean horizontally: weather
-weather = pd.concat([weather_max, weather_mean], axis=1)
+# Create a list of weather_max and weather_mean
+weather_list = [weather_max, weather_mean]
+
+# Concatenate weather_list horizontally
+weather = pd.concat(weather_list, axis=1)
 
 # Print weather
 print(weather)
