@@ -17,7 +17,7 @@ Calculate the slope of the loss function with respect to the prediction. To do t
 preds = (weights * input_data).sum()
 
 # Calculate the error: error
-error = target - preds
+error = preds - target
 
 # Calculate the slope: slope
 slope = input_data * error * 2
