@@ -17,6 +17,16 @@ FROM populations AS p1
 INNER JOIN populations AS p2
 ON  p1.country_code = p2.country_code;
 
+
+--since the key field we want to join on i.e country_code is the same name in both tables, we can use the USING clause instead of the ON clause
+SELECT p1.country_code,
+       p1.size size2010,
+       p2.size size2015
+FROM populations AS p1
+INNER JOIN populations AS p2 
+USING(country_code);
+
+
 /*
 Instructions 2/3
 Notice from the result that for each country_code you have four entries laying out all combinations of 2010 and 2015.
