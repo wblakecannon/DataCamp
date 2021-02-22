@@ -14,6 +14,7 @@ import keras
 from keras.layers import Dense
 from keras.models import Sequential
 
+
 # Specify the model
 n_cols = predictors.shape[1]
 model = Sequential()
