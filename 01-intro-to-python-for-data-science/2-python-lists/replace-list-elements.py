@@ -30,4 +30,10 @@ areas[-1] = 10.5
 # Change "living room" to "chill zone"
 areas[4] = "chill zone"
 
-print(areas)
+areas
+
+
+x = ["a", "b", "c", "d"]
+x[1] = "r"
+x[2:] = ["s", "t"]
+print(x)
