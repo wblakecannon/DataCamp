@@ -17,7 +17,7 @@ Print out this index.
 Again, simply print out this number.
 '''
 # Create list areas
-areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+areas = [11.25, 18.0, 20.0, 10.75, 9.50, 14.5, 14.5]
 
 # Print out the index of the element 20.0
 print(areas.index(20))
