@@ -20,6 +20,7 @@ Hit 'Submit Answer' to fit both the models and visualize which one gives better 
 # Define early_stopping_monitor
 
 import matplotlib.pyplot as plt
+from keras.models import Sequential
 
 early_stopping_monitor = EarlyStopping(patience=2)
 
