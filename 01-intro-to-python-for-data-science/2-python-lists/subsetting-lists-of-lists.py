@@ -29,3 +29,10 @@ house = [['hallway', 11.25],
          ['bathroom', 9.5]]
 
 # A float: the bathroom area
+
+x = [["a", "b", "c"],
+     ["d", "e", "f"],
+     ["g", "h", "i"]]
+
+# First bracket signifies the column while second bracket signifies row which starts with index 0 each
+print(x[2][0])

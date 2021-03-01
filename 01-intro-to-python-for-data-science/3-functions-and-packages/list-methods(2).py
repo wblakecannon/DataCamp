@@ -30,3 +30,5 @@ areas.reverse()
 
 # Print out areas
 print(areas)
+fruit = "APPLE"
+print(list(fruit))
