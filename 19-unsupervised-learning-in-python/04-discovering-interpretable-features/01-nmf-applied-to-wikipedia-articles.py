@@ -9,7 +9,7 @@ Import NMF from sklearn.decomposition.
 Create an NMF instance called model with 6 components.
 Fit the model to the word count data articles.
 Use the .transform() method of model to transform articles, and assign the result to nmf_features.
-Print nmf_features to get a first idea what it looks like.
+Print nmf_features to get a first idea what it looks like (.round(2) rounds the entries to 2 decimal places.).
 '''
 # Import NMF
 from sklearn.decomposition import NMF
@@ -24,4 +24,4 @@ model.fit(articles)
 nmf_features = model.transform(articles)
 
 # Print the NMF features
-print(nmf_features)
+print(nmf_features.round(2))
