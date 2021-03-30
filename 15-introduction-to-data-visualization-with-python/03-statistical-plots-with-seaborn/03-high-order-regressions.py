@@ -21,10 +21,10 @@ Add a legend to the 'upper right'.
 plt.scatter(auto['weight'], auto['mpg'], label='data', color='red', marker='o')
 
 # Plot in blue a linear regression of order 1 between 'weight' and 'mpg'
-sns.regplot(x='weight', y='mpg', data=auto, scatter=None, color='blue', label='order 1')
+sns.regplot(x='weight', y='mpg', data=auto, scatter=None, color='blue', label='First Order')
 
 # Plot in green a linear regression of order 2 between 'weight' and 'mpg'
-sns.regplot(x='weight', y='mpg', data=auto, scatter=None, order=2, color='green', label='order 2')
+sns.regplot(x='weight', y='mpg', data=auto, scatter=None, order=2, color='green', label='Second Order')
 
 # Add a legend and display the plot
 plt.legend(loc='upper right')
